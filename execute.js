@@ -16,7 +16,10 @@
 		ActivityObjectID:		obj.activityObjectID,
 		DefinitionInstanceId:	obj.definitionInstanceId,
 		ActivityInstanceId:		obj.activityInstanceId,
-		LogValue:				obj.inArguments[0].LogValue
+		LogValue:				obj.inArguments[0].LogValue,
+		firstName: 				obj.inArguments[0].firstName,
+		lastName: 				obj.inArguments[0].lastName,
+		emailAddress: 			obj.inArguments[0].emailAddress,
 	}];
 
 	DE.Rows.Add(row);

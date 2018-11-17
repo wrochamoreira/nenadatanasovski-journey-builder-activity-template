@@ -1,15 +1,15 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-        "icon": "images/custom-icon.png",
-        "iconSmall": "images/custom-icon-Small.png",
-        "category": "message"
+        "icon": "images/checkbox.png",
+        "iconSmall": "images/checkboxSmall.png",
+        "category": "messages"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "Checkpoint",
+          "description": "A checkpoint logger activity",
           "step1Label": "Configure Activity"
         }
     },
@@ -21,7 +21,7 @@
                     {"lastName": "{{Contact.Attribute.test_list_ca.LastName}}"}									
 			],
           "outArguments": [],
-          "url": "https://ancient-springs-24918.herokuapp.com/journeybuilder/execute",
+          "url": "https://fierce-brook-54023.herokuapp.com/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -33,35 +33,25 @@
     "configurationArguments": {
       "applicationExtensionKey": "d56f3a96-55cc-4c31-a0b4-788f869f3e77",
       "save": {
-        "url": "https://ancient-springs-24918.herokuapp.com/journeybuilder/save",
+        "url": "hhttps://fierce-brook-54023.herokuapp.com/routes/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://ancient-springs-24918.herokuapp.com/journeybuilder/publish",
+        "url": "https://fierce-brook-54023.herokuapp.com/routes/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://ancient-springs-24918.herokuapp.com/journeybuilder/stop",
+        "url": "https://fierce-brook-54023.herokuapp.com/routes/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://ancient-springs-24918.herokuapp.com/journeybuilder/validate",
+        "url": "https://fierce-brook-54023.herokuapp.com/routes/validate",
         "verb": "POST",
         "useJwt": true
       }
-    },
-    "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
-    ],
-    "userInterfaces": {
-        "configModal": {
-            "height": 400,
-            "width": 1000,
-          "fullscreen": false
-        }
     },
     "schema": {
         "arguments": {
